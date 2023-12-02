@@ -2,20 +2,19 @@ package com.project.ChatEncryptedApp.Client;
 
 import com.project.ChatEncryptedApp.Entity.User;
 import com.project.ChatEncryptedApp.RSA.RSA;
-import com.project.ChatEncryptedApp.Repository.UserRepository;
-import com.project.ChatEncryptedApp.Service.Service;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.List;
 import java.util.Scanner;
 
 @RequiredArgsConstructor
-public class Registaration {
+public class Registration {
 
     static String userID, password;
     static Scanner in = new Scanner(System.in);
@@ -24,12 +23,26 @@ public class Registaration {
 
     static  String response2;
     private static RestTemplate restTemplate = new RestTemplate();
+    public Pane pnSignUp;
+    public Pane pnSignIn;
+    public TextField userIdField;
+    public TextField passwordField;
+    public Button loginButton;
+    public Button signupBottun;
+    public Label loginFailed;
+    public TextField userIdField1;
+    public TextField nameField;
+    public TextField passwordField1;
+    public Button signUpButton;
+    public Button backToLogin;
+    public Label signUpSuccess;
+    public Label siguUpExist;
+    public Label signUpSuccess1;
 
     public static void SignIn() {
         while (true) {
             System.out.print("Please Enter Your UserID To Sign in: ");
              userID = in.next();
-
             System.out.print("PLease Enter Your Password To Sign in: ");
              password = in.next();
 
