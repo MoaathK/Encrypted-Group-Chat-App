@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane prefHeight="560.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ChatEncryptedApp.Client.Chatting">
+<AnchorPane prefHeight="560.0" prefWidth="330.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.project.ChatEncryptedApp.Client.Chatting">
     <children>
         <StackPane layoutY="67.0" prefHeight="494.0" prefWidth="330.0">
             <children>
@@ -20,10 +20,10 @@
                      <children>
                         <TextField fx:id="msgField" layoutX="85.0" layoutY="6.0" promptText="message: " style="-fx-background-radius: 8;" />
                         <TextField fx:id="toField" layoutX="5.0" layoutY="6.0" prefHeight="26.0" prefWidth="67.0" promptText="to:" style="-fx-background-radius: 8;" />
-                        <Button fx:id="sendButton" blendMode="EXCLUSION" layoutX="270.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-radius: 16;" text="Send" />
+                        <Button fx:id="sendButton" blendMode="EXCLUSION" layoutX="270.0" layoutY="5.0" mnemonicParsing="false" onAction="#sendMessage" style="-fx-background-radius: 16;" text="Send" />
                      </children>
                         </AnchorPane>
-                  <TextArea fx:id="msgArea" layoutY="-4.0" prefHeight="463.0" prefWidth="335.0" style="-fx-background-radius: 0; -fx-background-color: #C0C0C0;" />
+                  <TextArea fx:id="msgArea"  editable="false" layoutY="-4.0" prefHeight="463.0" prefWidth="335.0" style="-fx-background-radius: 0; -fx-background-color: #C0C0C0;" wrapText="true" />
                     </children>
                 </Pane>
             </children>
