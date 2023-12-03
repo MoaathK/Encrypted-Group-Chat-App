@@ -32,7 +32,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/Registration.fxml"));
-        primaryStage.setTitle("RSA Group Chat");
+        primaryStage.setTitle("Encrypted Group Chat");
         primaryStage.setScene(new Scene(root, 330, 560));
         primaryStage.setResizable(false);
         primaryStage.show();

@@ -57,7 +57,6 @@ public class Registration {
         } else {
             if (response.getPassword().equals(password)) {
                 chattingWindow();
-                ConnectSocket();
             } else {
                 loginFailed.setOpacity(1);
             }
@@ -65,18 +64,6 @@ public class Registration {
         }
     }
 
-    private static void ConnectSocket() {
-
-        try {
-            socket = new Socket("localhost", 8989);
-            System.out.println("Connected to the server.");
-            // Start the chat functionality using the socket
-            Chatting chatClient = new Chatting();
-            chatClient.start();
-        } catch (IOException e) {
-            System.out.println("Error connecting to the server: " + e.getMessage());
-        }
-    }
     public void SignUp() {
 
         userID = userIdField1.getText();

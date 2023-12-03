@@ -59,17 +59,17 @@
                         <Label fx:id="loginFailed" layoutX="103.0" layoutY="312.0" opacity="0.0" prefHeight="17.0" prefWidth="144.0" text="Incorrect, please try again" />
                         <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../java/com/project/ChatEncryptedApp/icons/5395489.png" />
+                                <Image url="@icons/5395489.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="23.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../java/com/project/ChatEncryptedApp/icons/icons8-user-100.png" />
+                                <Image url="@icons/icons8-user-100.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="23.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../java/com/project/ChatEncryptedApp/icons/icons8-password-384.png" />
+                                <Image url="@icons/icons8-password-384.png" />
                             </image>
                         </ImageView>
                     </children>

@@ -22,9 +22,7 @@ public class ClientHandler extends Thread {
         try {
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
             clientWriters.add(writer);
-
             String message;
-
             //server output
             while ((message = reader.readLine()) != null) {
                 System.out.println("Received message from client: " + message);
