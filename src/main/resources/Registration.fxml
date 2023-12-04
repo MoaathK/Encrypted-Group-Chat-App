@@ -21,9 +21,9 @@
                                 <Font name="System Bold" size="28.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="userIdField1" layoutX="59.0" layoutY="171.0" prefHeight="34.0" prefWidth="212.0" promptText="User ID" />
+                        <TextField fx:id="userIdField1" layoutX="60.0" layoutY="171.0" prefHeight="34.0" prefWidth="212.0" promptText="User ID" />
                         <TextField fx:id="nameField" layoutX="60.0" layoutY="226.0" prefHeight="34.0" prefWidth="212.0" promptText="Name" />
-                        <TextField fx:id="passwordField1" layoutX="61.0" layoutY="280.0" prefHeight="34.0" prefWidth="212.0" promptText="Password" />
+                        <TextField fx:id="passwordField1" layoutX="60.0" layoutY="280.0" prefHeight="34.0" prefWidth="212.0" promptText="Password" />
                         <Button fx:id="signUpButton" blendMode="EXCLUSION" layoutX="107.0" layoutY="332.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 16;" text="Sign Up" />
                         <Button fx:id="backToLogin" blendMode="EXCLUSION" layoutX="127.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="20.0" prefWidth="80.0" style="-fx-background-radius: 16;" text="Login" />
                         <Label fx:id="signUpSuccess" layoutX="100.0" layoutY="373.0" opacity="0.0" prefHeight="17.0" prefWidth="151.0" text="Signed up successfully!!" textAlignment="CENTER" />
@@ -35,9 +35,24 @@
                         </Label>
                         <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../java/com/project/ChatEncryptedApp/icons/5395489.png" />
+                                <Image url="@icons/5395489.png" />
                             </image>
                         </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="14.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8-user-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="14.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8-password-384.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="14.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8-abc-96.png" />
+                     </image>
+                  </ImageView>
                     </children>
                 </Pane>
                 <Pane fx:id="pnSignIn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
