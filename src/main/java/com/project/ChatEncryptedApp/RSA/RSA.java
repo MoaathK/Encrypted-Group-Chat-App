@@ -40,9 +40,9 @@ public class RSA {
             d = getD(phiN, e);
         }
 
-        keys[0] = n;
-        keys[1] = e;
-        keys[2] = d;
+        keys[0] = e;
+        keys[1] = d;
+        keys[2] = n;
 
         return keys;
     }
